@@ -58,13 +58,14 @@
         justify-self: center;
     
     img {
-        width: 80%;
+        width: 75%;
         height: auto ;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+        box-shadow: 1px 1px 10px 0px rgba(177, 177, 177, 0.75);
     }
 }
 }
