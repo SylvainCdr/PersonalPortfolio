@@ -1,13 +1,28 @@
 import React from "react";
 import "./style.scss";
-import {
-  NotificationContainer,
-  NotificationManager,
-} from "react-notifications";
+// import {
+//   NotificationContainer,
+//   NotificationManager,
+// } from "react-notifications";
+import Swal from "sweetalert2";
+
 
 function Contact() {
   const EmailSent = () => {
-    alert("Votre message a bien été envoyé");
+    if (document.getElementById("name").value === "" || document.getElementById("email").value === "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$" || document.getElementById("message").value === "") {
+      Swal.fire({
+        title: "Erreur",
+        text: "Veuillez renseigner tous les champs correctement",
+        icon: "error"
+      });
+      return;
+    }
+    Swal.fire({
+      title: "Merci",
+      text: "Votre message a bien été envoyé",
+      icon: "success"
+    });
+  //   alert("Votre message a bien été envoyé");
   };
 
   return (
