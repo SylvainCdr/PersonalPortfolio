@@ -1,12 +1,12 @@
-import React from "react";
+import { React, useState } from "react";
 import "./style.scss";
 
 function Portfolio() {
-  const Portfolio = [
+  const Projects = [
     {
       id: 1,
       name: "KASA - Location de biens",
-      tech: "React",
+      tech: ["javascript", "js", "react", "html", "css"],
       image: "kasa.png",
       link: "https://github.com/SylvainCdr/kasa",
       description:
@@ -15,7 +15,15 @@ function Portfolio() {
     {
       id: 2,
       name: "Loc'Event - Location de salles",
-      tech: "Symfony",
+      tech: [
+        "javascript",
+        "symfony",
+        "php",
+        "html",
+        "css",
+        "bootstrap",
+        "mysql",
+      ],
       image: "locEvent.png",
       link: "https://github.com/SylvainCdr/ecfHall/tree/STAGING",
       description:
@@ -24,7 +32,7 @@ function Portfolio() {
     {
       id: 3,
       name: "Pokemons - Pokedex",
-      tech: "React",
+      tech: ["javascript", "js", "react", "api", "html", "css"],
       image: "pokemon.png",
       link: "https://github.com/SylvainCdr/pokemon",
       description:
@@ -33,7 +41,7 @@ function Portfolio() {
     {
       id: 4,
       name: "CodExpress - Gestion et partage de snippets",
-      tech: "Symfony",
+      tech: ["symfony", "php", "html", "css", "mysql"],
       image: "codexpress.png",
       link: "https://github.com/SylvainCdr/codexpress ",
       description:
@@ -42,7 +50,7 @@ function Portfolio() {
     {
       id: 5,
       name: "BiblioApp - Interface de gestion de bibliothèque",
-      tech: "Symfony",
+      tech: ["symfony", "php", "html", "css", "mysql"],
       image: "biblioapp.png",
       link: "https://github.com/SylvainCdr/biblioapp",
       description:
@@ -51,7 +59,7 @@ function Portfolio() {
     {
       id: 6,
       name: "Site - e-commerce",
-      tech: "HTML / CSS",
+      tech: ["html", "css"],
       image: "e-com_2.png",
       link: "https://github.com/SylvainCdr/WEBSITE_INTERACTIF ",
       description:
@@ -60,7 +68,7 @@ function Portfolio() {
     {
       id: 7,
       name: "Countries - API",
-      tech: "React / Node.js",
+      tech: ["javascript", "js", "react", "html", "css", "api"],
       image: "countries.png",
       link: "https://github.com/SylvainCdr/countries",
       description:
@@ -69,7 +77,7 @@ function Portfolio() {
     {
       id: 8,
       name: "Portfolio architecte d'intérieur",
-      tech: "React / Node.js",
+      tech: ["javascript", "js", "react", "node", "api", "html", "css"],
       image: "portfolio-architecte.png",
       link: "https://github.com/SylvainCdr/Portfolio-architecte-Frontend",
       description:
@@ -78,7 +86,7 @@ function Portfolio() {
     {
       id: 9,
       name: "Gestionnaire de tâches",
-      tech: "PHP / MySQL",
+      tech: ["php", "html", "css", "mysql"],
       image: "todolist.png",
       link: "https://github.com/SylvainCdr/toDoList ",
       description:
@@ -86,27 +94,70 @@ function Portfolio() {
     },
   ];
 
+
+  const [searchTechnos, setSearchTechnos] = useState("");
+  const [enlargedImage, setEnlargedImage] = useState(null);
+
+  const handleSearch = (e) => {
+    setSearchTechnos(e.target.value);
+    setEnlargedImage(null); // Réinitialiser l'image agrandie lors d'une nouvelle recherche
+  };
+
+  const handleImageClick = (image) => {
+    setEnlargedImage(image);
+  };
+
+  const filteredProjects = Projects.filter((project) => {
+    const lowerCasedSearch = searchTechnos.toLowerCase();
+    return project.tech.some((tech) => tech.toLowerCase().includes(lowerCasedSearch));
+  });
+
   return (
     <div className="portfolio">
       <h1>Découvrez mes projets</h1>
 
-      <div className="portfolio_container">
-        {Portfolio.map((item) => (
-          <div className="portfolio__card" key={item.id}>
-            <h2>{item.name}</h2>
-            <img src={"media/portfolio/" + item.image} alt={item.name} />
+      {/* Searchbar pour saisir une techno et afficher les résultats en temps réel */}
+      <div className="portfolio_search">
+        <input
+          type="text"
+          placeholder="Rechercher une techno (ex: react)"
+          value={searchTechnos}
+          onChange={handleSearch}
+        />
+      </div>
 
-            <p>{item.tech}</p>
-            <p>{item.description}</p>
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
+      {/* Liste de projets filtrés */}
+      <div className="portfolio_container">
+        {filteredProjects.map((project) => (
+          <div className="portfolio__card" key={project.id}>
+            <h2>{project.name}</h2>
+            <img
+              src={"media/portfolio/" + project.image}
+              alt={project.name}
+              onClick={() => handleImageClick(project.image)}
+            />
+            {/* <p>{project.tech.join(", ")}</p> */}
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button>
                 {" "}
-                Voir le projet <i class="fa-brands fa-github"></i>
+                Voir le projet <i className="fa-brands fa-github"></i>
               </button>
             </a>
           </div>
         ))}
       </div>
+
+      {/* Affichage de l'image agrandie */}
+      {enlargedImage && (
+        <div className="enlarged_img" onClick={() => setEnlargedImage(null)}>
+          <img
+            src={"media/portfolio/" + enlargedImage}
+            alt="Enlarged Project"
+            className="enlarged_image"
+          />
+        </div>
+      )}
     </div>
   );
 }

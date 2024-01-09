@@ -1,11 +1,7 @@
-
-import './style.scss';
-import { React, useState } from 'react';
-
-
+import { React, useState } from "react";
+import "./style.scss";
 
 function Competences() {
-
   const techSkills = [
     {
       name: "HTML",
@@ -19,33 +15,32 @@ function Competences() {
       img: "https://img.icons8.com/?size=64&id=5cVdiiKKi0vX&format=png",
     },
     {
-      name :"UI / UX",
+      name: "UI / UX",
       category: "Frontend",
       img: "https://img.icons8.com/?size=80&id=7rimLou8lu9W&format=png",
     },
-    { 
+    {
       name: "PHP",
       category: "Backend",
       img: "https://img.icons8.com/?size=64&id=UGYn5TapNioV&format=png",
     },
     {
-      name : "Symfony",
+      name: "Symfony",
       category: "Framework",
       img: "https://img.icons8.com/?size=80&id=PtXpYRJkVmd1&format=png",
-
     },
     {
-      name : "MySQL",
+      name: "MySQL",
       category: "BDD",
       img: "https://img.icons8.com/?size=48&id=9nLaR5KFGjN0&format=png",
     },
     {
-      name : "MongoDB",
+      name: "MongoDB",
       category: "BDD",
       img: "https://img.icons8.com/?size=80&id=8rKdRqZFLurS&format=png",
     },
     {
-      name : "PostgreSQL",
+      name: "PostgreSQL",
       category: "BDD",
       img: "https://img.icons8.com/?size=48&id=38561&format=png",
     },
@@ -65,7 +60,7 @@ function Competences() {
       category: "Backend",
       img: "https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png",
     },
-   
+
     {
       name: "GitHub",
       category: "Tools",
@@ -87,32 +82,42 @@ function Competences() {
       img: "https://img.icons8.com/?size=48&id=4VVL78edhbW9&format=png",
     },
     {
-      name :"Trello",
+      name: "Trello",
       category: "Outils",
       img: "https://img.icons8.com/?size=80&id=HxCJ3JvA06ml&format=png",
     },
     {
-      name : "Bootstrap",
+      name: "Bootstrap",
       category: "Frontend",
       img: "https://img.icons8.com/?size=48&id=g9mmSxx3SwAI&format=png",
     },
     {
-      name : "WordPress",
+      name: "WordPress",
       category: "CMS",
       img: "https://img.icons8.com/?size=64&id=46972&format=png",
     },
-  ]
+  ];
 
   const [currentCategory, setCurrentCategory] = useState(0);
   const [displayedSkills, setDisplayedSkills] = useState(techSkills);
-  const categories = ["Toutes", "Frontend", "Backend", "Framework", "BDD", "Outils", "CMS"];
+  const categories = [
+    "Toutes",
+    "Frontend",
+    "Backend",
+    "Framework",
+    "BDD",
+    "Outils",
+    "CMS",
+  ];
 
   const filter = (category, index) => {
     setCurrentCategory(index);
     if (category === "Toutes") {
       setDisplayedSkills(techSkills);
     } else {
-      const filtered = techSkills.filter((skill) => skill.category === category);
+      const filtered = techSkills.filter(
+        (skill) => skill.category === category
+      );
       setDisplayedSkills(filtered);
     }
   };
@@ -124,12 +129,15 @@ function Competences() {
       {/* Création des boutons pour filtrer les différentes catégories */}
       <div className="skills_buttons">
         {categories.map((category, index) => (
-          <button key={index} className={currentCategory === index ? "active" : ""} onClick={() => filter(category, index)}>
+          <button
+            key={index}
+            className={currentCategory === index ? "active" : ""}
+            onClick={() => filter(category, index)}
+          >
             {category}
           </button>
         ))}
       </div>
-      
 
       {/* Création de la liste des compétences */}
       <div className="skills_list">

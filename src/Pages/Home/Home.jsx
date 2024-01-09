@@ -25,24 +25,19 @@ function Homepage() {
       </div>
       {/* Fin animation CSS */}
 
-      <div className="homepage">
+      <div className="section_1">
         <div className="homepage__title">
           <h1>Sylvain Cadoret</h1>
           <h2>Développeur web Full-stack junior</h2>
-          <p>🚀 Enthousiaste du code et de la créativité ! </p>
+          <p>Enthousiaste du code et de la créativité ! </p>
           <p>
             {" "}
             Découvrez mon portfolio où je fusionne mes compétences en
-            développement web et mobile avec une passion pour l'innovation.{" "}
+            développement web avec une passion pour l'innovation.{" "}
           </p>
-          <p>
-            {" "}
-            Explorez avec moi l'intersection entre la gestion et la
-            programmation, et plongez dans un univers où chaque ligne de code
-            est une opportunité de créer quelque chose d'extraordinaire.{" "}
-          </p>
+
           <p> Let's craft the future together! 💻✨</p>
-          {/* bouton call to action */}
+          {/* bouton CTA*/}
           <button>Découvrez mes projets</button>
         </div>
         <div className="homepage__picture">
@@ -51,6 +46,41 @@ function Homepage() {
             alt="Sylvain Cadoret - développeur"
           />
         </div>
+
+      </div>
+      <div className="section_2">
+        <h2>Quelques mots...</h2>
+<div className="presentation">
+      <div className="section_2__picture">
+          <img src="./media/fusee3.png" alt="Sylvain Cadoret" />
+        </div>
+        <div className="text">
+        <p>
+          Bonjour à tous, </p>
+          <p>Directeur Adjoint de magasin en reconversion après 9 ans de
+          commerce. </p>
+          <p>Passionné de nature, de voyage, de plongée, d'aquariophilie,
+          de terrariophilie et de botanique, je suis reconnu pour mon approche
+          positive et mon enthousiasme contagieux. 
+          Ma reconversion vers le développement web découle de ma fascination
+          pour ce domaine. </p>
+          <p>Aujourd'hui, je souhaite mettre à profit mes
+          compétences au service d'une entreprise dynamique. </p>
+          <p>Mon objectif est de
+          contribuer à des projets web passionnants tout en continuant à
+          apprendre et à grandir professionnellement. </p>
+          <p>Ma combinaison
+          d'expérience en gestion, de positivité et de passion pour le
+          développement web fait de moi un collaborateur déterminé, enthousiaste
+          et prêt à relever de nouveaux défis. Je suis impatient de contribuer
+          au succès de votre entreprise. </p>
+          <p>Merci de prendre le temps de découvrir
+          mon parcours, et n'hésitez pas à me contacter pour discuter de nos
+          futures collaborations.
+        </p>
+        </div>
+        </div>
+       
       </div>
     </div>
   );
