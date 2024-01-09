@@ -1,0 +1,55 @@
+.skills_container{
+
+  
+.skills_buttons {
+text-align: center;
+
+    button {
+        background-color: #008518;
+        margin: 1rem;
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 8rem;
+        height: 2.5rem;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        -moz-border-radius: 0.3rem;
+        -ms-border-radius: 0.3rem;
+        -o-border-radius: 0.3rem;
+
+        &:hover {
+            background-color: #00b81c;
+        }
+}
+}
+
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 2rem;
+        text-align: center;
+    }
+
+.skills_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+.skills_card {
+    margin: auto;
+
+    p {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+img {
+    width: 5rem;
+    margin : 2.5rem 0rem 0rem 0rem;
+}
+}

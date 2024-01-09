@@ -6,33 +6,33 @@
 
 &__title {
         width: 100%;
-        align-self: auto;
         margin: auto;
     }
 
     h1 {
         font-size: 3.5rem;
         font-weight: 700;
-        margin: 2rem;
         color: #fff;
+        margin : 2rem;
     }
 
     h2 {
         font-size: 2rem;
         font-weight: 400;
         margin: 2rem;
-        color: #ffffff95;}
+        color: #ffffffe8;}
 
-    h3 {
-        font-size: 1.5rem;
+    p {
+        font-size: 1.1rem;
         
-        margin: 2rem;
-        color: #ffffff95;
+        margin : 0.5rem 3rem 1rem 2rem ;
+        color: #e3fdd3;
         
     }
 
     button {
         margin-left: 2rem;
+        margin-top: 2rem;
         padding: 1.5rem 6rem;
         border: none;
         border-radius: 5px;
@@ -211,8 +211,8 @@
       }
       
       &.second {
-        left: 485px;
-        top: 155px;
+        left: 550px;
+        top: 90px;
         .shape {
           &.triangle, &.circle, &.circle.big, &.disc {
             animation-delay: 1.9s;

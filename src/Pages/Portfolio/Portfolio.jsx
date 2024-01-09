@@ -75,10 +75,15 @@ function Portfolio() {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
-
-
-
-
+    {
+      id: 9,
+      name: "Gestionnaire de tâches",
+      tech: "PHP / MySQL",
+      image: "todolist.png",
+      link: "https://github.com/SylvainCdr/toDoList ",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
+    },
   ];
 
   return (
@@ -87,20 +92,18 @@ function Portfolio() {
 
       <div className="portfolio_container">
         {Portfolio.map((item) => (
-          <div className="portfolio__img" key={item.id}>
+          <div className="portfolio__card" key={item.id}>
             <h2>{item.name}</h2>
             <img src={"media/portfolio/" + item.image} alt={item.name} />
-            <div className="portfolio__desc" key={item.id}>
-              <div>
-                <p>{item.tech}</p>
-                <p>{item.description}</p>
-      
-                
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <button> Voir le projet  <i class="fa-brands fa-github"></i></button>
-                </a> 
-              </div>
-            </div>
+
+            <p>{item.tech}</p>
+            <p>{item.description}</p>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <button>
+                {" "}
+                Voir le projet <i class="fa-brands fa-github"></i>
+              </button>
+            </a>
           </div>
         ))}
       </div>
