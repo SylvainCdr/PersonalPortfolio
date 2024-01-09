@@ -18,9 +18,11 @@ function Contact() {
       return;
     }
     Swal.fire({
-      title: "Merci",
-      text: "Votre message a bien été envoyé",
-      icon: "success"
+      position: "center",
+      icon: "success",
+      title: "Message envoyé avec succès",
+      showConfirmButton: false,
+      timer: 1500
     });
   //   alert("Votre message a bien été envoyé");
   };
