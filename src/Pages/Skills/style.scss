@@ -25,12 +25,14 @@ text-align: center;
 }
 }
 
-    h1{
-        font-size: 2rem;
-        font-weight: 700;
-        margin: 2rem;
-        text-align: center;
-    }
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem 0rem 1rem 0rem;
+    color: var(--sunset8);
+    
+}
 
 .skills_list {
     display: grid;

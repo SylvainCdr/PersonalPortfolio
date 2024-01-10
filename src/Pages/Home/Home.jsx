@@ -49,12 +49,12 @@ function Homepage() {
 
       </div>
       <div className="section_2">
-        <h2>Quelques mots...</h2>
 <div className="presentation">
-      <div className="section_2__picture">
-          <img src="./media/fusee3.png" alt="Sylvain Cadoret" />
+        <div className="presentation_title">"Commerce, Nature, Futur"</div>
+      <div className="presentation_img">
+          <img src="./media/fusee2.png" alt="Sylvain Cadoret" />
         </div>
-        <div className="text">
+        <div className="presentation_text">
         <p>
           Bonjour à tous, </p>
           <p>Directeur Adjoint de magasin en reconversion après 9 ans de
@@ -70,7 +70,7 @@ function Homepage() {
           contribuer à des projets web passionnants tout en continuant à
           apprendre et à grandir professionnellement. </p>
           <p>Ma combinaison
-          d'expérience en gestion, de positivité et de passion pour le
+          d'expérience en gestion, de positivité et de mon attrait pour le
           développement web fait de moi un collaborateur déterminé, enthousiaste
           et prêt à relever de nouveaux défis. Je suis impatient de contribuer
           au succès de votre entreprise. </p>
