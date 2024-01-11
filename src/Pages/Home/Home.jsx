@@ -46,41 +46,47 @@ function Homepage() {
             alt="Sylvain Cadoret - développeur"
           />
         </div>
-
       </div>
       <div className="section_2">
-<div className="presentation">
-        <div className="presentation_title">"Commerce, Nature, Futur"</div>
-      <div className="presentation_img">
-          <img src="./media/fusee2.png" alt="Sylvain Cadoret" />
-        </div>
-        <div className="presentation_text">
-        <p>
-          Bonjour à tous, </p>
-          <p>Directeur Adjoint de magasin en reconversion après 9 ans de
-          commerce. </p>
-          <p>Passionné de nature, de voyage, de plongée, d'aquariophilie,
-          de terrariophilie et de botanique, je suis reconnu pour mon approche
-          positive et mon enthousiasme contagieux. 
-          Ma reconversion vers le développement web découle de ma fascination
-          pour ce domaine. </p>
-          <p>Aujourd'hui, je souhaite mettre à profit mes
-          compétences au service d'une entreprise dynamique. </p>
-          <p>Mon objectif est de
-          contribuer à des projets web passionnants tout en continuant à
-          apprendre et à grandir professionnellement. </p>
-          <p>Ma combinaison
-          d'expérience en gestion, de positivité et de mon attrait pour le
-          développement web fait de moi un collaborateur déterminé, enthousiaste
-          et prêt à relever de nouveaux défis. Je suis impatient de contribuer
-          au succès de votre entreprise. </p>
-          <p>Merci de prendre le temps de découvrir
-          mon parcours, et n'hésitez pas à me contacter pour discuter de nos
-          futures collaborations.
-        </p>
-        </div>
-        </div>
-       
+        
+          <div className="presentation_titleImg">
+            <div className="presentation_title">"Commerce, Web, Élan"</div>
+            <div className="presentation_img">
+              <img src="./media/fusee2.png" alt="Sylvain Cadoret" />
+            </div>
+          </div>
+          <div className="presentation_text">
+            <p>Bonjour à tous, </p>
+            <p>
+              Directeur Adjoint de magasin en reconversion après 9 ans de
+              commerce.{" "}
+            </p>
+            <p>
+              Passionné de nature, de voyage, de plongée, d'aquariophilie, de
+              terrariophilie et de botanique, je suis reconnu pour mon approche
+              positive et mon enthousiasme contagieux. Ma reconversion vers le
+              développement web découle de ma fascination pour ce domaine.{" "}
+            </p>
+            <p>
+              Aujourd'hui, je souhaite mettre à profit mes compétences au
+              service d'une entreprise dynamique.{" "}
+            </p>
+            <p>
+              Mon objectif est de contribuer à des projets web passionnants tout
+              en continuant à apprendre et à grandir professionnellement.{" "}
+            </p>
+            <p>
+              Ma combinaison d'expérience en gestion, de positivité et de mon
+              attrait pour le développement web fait de moi un collaborateur
+              déterminé, enthousiaste et prêt à relever de nouveaux défis. Je
+              suis impatient de contribuer au succès de votre entreprise.{" "}
+            </p>
+            <p>
+              Merci de prendre le temps de découvrir mon parcours, et n'hésitez
+              pas à me contacter pour discuter de nos futures collaborations.
+            </p>
+          </div>
+        
       </div>
     </div>
   );

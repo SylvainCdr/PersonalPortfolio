@@ -1,8 +1,9 @@
 .section_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;;
-    height: 45vh;
+    display: flex;
+    // grid-template-columns: 1fr 1fr;
     width: 100%;
+    margin-bottom: 4rem;
+
     
 
 &__title {
@@ -16,12 +17,12 @@
         font-weight: 700;
         color: #fff;
         margin: 4rem 0rem 0rem 2rem;
-    }
+        }
 
     h2 {
       font-family: 'Montserrat' , sans-serif;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 500;
         margin: 2rem;
         color: var(--sunset8);
       }
@@ -31,13 +32,15 @@
         font-size: 1.3rem;
         margin : 0.5rem 3rem 0.8rem 2rem ;
         color: var(--sunset3);
+        text-align: justify;
         
     }
 
     button {
+      width: 60%;
         margin-left: 2rem;
         margin-top: 2rem;
-        padding: 1.5rem 6rem;
+        padding: 0.8rem;
         border: none;
         border-radius: 5px;
         background-color: #268f00;
@@ -56,15 +59,14 @@
 
     .homepage__picture {
         width: 100%;
-        height: auto;
-        margin: 2rem;
+        margin-top: 2rem;
+        text-align: center;
         align-self: center;
-        justify-self: center;
+
     
     img {
       justify-content: center;
-        width: 75%;
-        height: auto ;
+        width: 70%;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -77,36 +79,33 @@
 
 .section_2 {
 
-  .presentation {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 11fr;
+    display: flex;
     
-    } 
+
+  .presentation_titleImg{
+      width: 100%;
+      text-align: center;
 
   .presentation_title {
 
-  grid-area: 1 / 1 / 2 / 2;
- 
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  margin: auto;
+  margin-bottom: 1rem;
+
   color: var(--sunset1);
   }
 
   .presentation_img { 
-    grid-area: 2 / 1 / 3 / 2; 
     text-align: center;
-    width: 100%;
+    // display: flex;
    
     img {
-      width:100%;
+      width:75%;
       margin: auto;
       animation: wiggle 2s linear infinite;
     
-    
-    /* Keyframes */
+   // DEBUT ANIMATION MOUVEMENT IMG
     @keyframes wiggle {
       0%, 5% {
         transform: rotateZ(0);
@@ -154,36 +153,32 @@
         transform: rotateZ(0);
       }
     }
-  } }
-
-  .presentation_text { 
-    grid-area: 1 / 2 / 3 / 3;
-    margin-left: 4rem;
-    p {
-      font-size: 1.3rem;
-      margin : 0.5rem 3rem 0.8rem 2rem ;
-      color: var(--sunset3);
-      
-    } 
-    
-    }
+    // FIN ANIMATION MOUVEMENT IMG
+  } 
+}
 }
 
+  .presentation_text { 
+    p {
+      font-size: 1.2rem;
+      margin : 0.5rem 2rem 0.8rem 2rem ;
+      color: var(--sunset3);
+      text-align: justify;   
+    } 
+    }} 
 
 
 
 
 
 
-  // début Animation 
 
 
+  // DEBUT ANIMATION 
   .animation-container {
     display: block;
     position: relative;
     width: 100%;
-    
-    
     .lightning-container {
       position: absolute;
       top: 10%;
@@ -220,9 +215,7 @@
           animation-delay: 0.2s;
         }
       }
-    }
-    
-    
+    } 
     .boom-container {
       position: absolute;
       display: flex;
@@ -242,8 +235,7 @@
         display: inline-block;
         position: relative;
         opacity: 0;
-        transform-origin: center center;
-        
+        transform-origin: center center;       
         &.triangle {
           width: 0;
           height: 0;
@@ -255,8 +247,7 @@
           margin-left: -15px;
           border-width: 0 2.5px 5px 2.5px;
           border-color: transparent transparent #42e599 transparent;
-          animation-name: boom-triangle;
-          
+          animation-name: boom-triangle;          
           &.big {
             margin-left: -25px;
             border-width: 0 5px 10px 5px;
@@ -264,7 +255,6 @@
             animation-name: boom-triangle-big;
           }
         }
-        
         &.disc {
           width: 8px;
           height: 8px;
@@ -275,7 +265,6 @@
           animation-timing-function: ease-out;
           animation-iteration-count: infinite;
         }
-        
         &.circle {
           width: 20px;
           height: 20px;
@@ -289,7 +278,6 @@
           &.white {
             border: 1px solid white;
           }
-          
           &.big {
             width: 40px;
             height: 40px;
@@ -300,23 +288,19 @@
             }
           }
         }
-        
         &:after {
           background-color: rgba(178, 215, 232, 0.2);
         }
       }
-      
       .shape {
         &.triangle, &.circle, &.circle.big, &.disc {
           animation-delay: .38s;
           animation-duration: 3s;
         }
-        
         &.circle {
           animation-delay: 0.6s;
         }
       }
-      
       &.second {
         left: 550px;
         top: 90px;
@@ -331,7 +315,6 @@
       }
     }
   }
-  
   @keyframes woosh {
     0% {
       width: 12px;
@@ -357,7 +340,6 @@
     70.1% {
       transform: translate(500px, 150px) rotate(-37deg);
     }
-    
     85% {
       width: 50px;
     }
@@ -430,4 +412,91 @@
       
     }
   }
-  //Fin Animation
+  //FIN ANIMATION
+
+
+
+
+
+  // RESPONSIVE
+
+  @media screen and (max-width: 1024px) {
+ .section_1
+    {
+      h1 {
+        font-size: 2.5rem;
+        }
+      h2 {
+        font-size: 1.5rem;
+        }
+      p {
+        font-size: 1rem;
+        }
+      button {
+        font-size: 1.1rem;
+        flex-direction: column-reverse;
+       }
+      }
+
+    .section_2 {
+
+flex-direction: column;
+
+.presentation_titleImg {
+  width: 100%;
+  margin: auto;
+  
+  .presentation_img {
+      width: 40%;
+      margin: auto;
+    }
+  }
+
+     
+.presentation_text {
+  p {
+    font-size: 1rem;
+  }
+      
+
+      }
+    }
+  }
+    
+     
+
+    @media screen and (max-width: 900px) {
+      .section_1
+      { 
+        button {
+          width: 35%;
+          height: auto;
+          
+          position: absolute;
+          margin : -2rem 0rem 0rem 29rem;
+        }}}
+   
+  
+
+@media screen and (max-width: 768px) {
+  .section_1 {
+    flex-direction: column-reverse;
+img {
+  width: 50%;
+}
+   button {
+    font-size: 0.8rem;
+    margin : -22rem 0rem 0rem 15rem;
+   }
+    
+  }
+  .section_2 {
+    flex-direction: column;
+    text-align: center;
+    img {
+      width: 35%;
+
+    }
+  }
+  
+}

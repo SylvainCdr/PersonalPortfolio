@@ -5,7 +5,9 @@ import { NavLink } from 'react-router-dom'
 
  function Header() {
 
-    // const Linkedin = "www.linkedin.com/in/sylvain-cadoret"
+    const linkedin = "https://www.linkedin.com/in/sylvain-cadoret/"
+    const github = "https://github.com/SylvainCdr"
+
 
     return (
         <>
@@ -17,8 +19,8 @@ import { NavLink } from 'react-router-dom'
                     <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink to="/contact">Contact</NavLink></li>
                     <span>
-                    <a href="https://github.com/SylvainCdr" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/?size=48&id=bVGqATNwfhYq&format=png" alt="github" /></a>
-                        <a href="https://www.linkedin.com/in/sylvain-cadoret/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="linkedin" /></a>
+                    <a href={github}  target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/?size=48&id=bVGqATNwfhYq&format=png" alt="github" /></a>
+                        <a href={linkedin} target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="linkedin" /></a>
                     </span>
 
                 </ul>
