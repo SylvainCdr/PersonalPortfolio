@@ -138,12 +138,11 @@ function Portfolio() {
             />
             {/* <p>{project.tech.join(", ")}</p> */}
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
               <button>
-                {" "}
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Voir le projet <i className="fa-brands fa-github"></i>
-              </button>
             </a>
+              </button>
           </div>
         ))}
       </div>
