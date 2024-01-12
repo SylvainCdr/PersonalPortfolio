@@ -1,7 +1,7 @@
 {
   "name": "react-node",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://sylvaincdr.github.io/personalportfolio-frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
