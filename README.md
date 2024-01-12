@@ -2,6 +2,13 @@
 
 Ce référentiel contient le code source du site web personnel de Sylvain Cadoret. Le portfolio est construit avec React et présente les compétences de Sylvain, ses projets, et un formulaire de contact.
 
+# Screenshots
+
+![Alt text](<Capture d'écran 2024-01-12 153057.png>)
+![Alt text](<Capture d'écran 2024-01-12 153150.png>)
+![Alt text](<Capture d'écran 2024-01-12 153135.png>)
+![Alt text](<Capture d'écran 2024-01-12 153208.png>)
+
 ## Table des matières
 
 - [Page d'accueil](#page-daccueil)
