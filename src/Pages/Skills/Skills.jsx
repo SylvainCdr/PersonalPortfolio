@@ -2,6 +2,8 @@ import { React, useState } from "react";
 import "./style.scss";
 
 function Competences() {
+
+  // DEBUT TABLEAU D'OBJETS DES COMPETENCES
   const techSkills = [
     {
       name: "HTML",
@@ -97,7 +99,9 @@ function Competences() {
       img: "https://img.icons8.com/?size=80&id=aMLZmDlq6SvC&format=png",
     },
   ];
+  // FIN TABLEAU D'OBJETS DES COMPETENCES
 
+  // DEBUT FILTRE DES COMPETENCES
   const [currentCategory, setCurrentCategory] = useState(0);
   const [displayedSkills, setDisplayedSkills] = useState(techSkills);
   const categories = [
@@ -109,7 +113,9 @@ function Competences() {
     "Outils",
     "CMS",
   ];
+   // FIN FILTRE DES COMPETENCES
 
+   // DEBUT FONCTION DE FILTRE
   const filter = (category, index) => {
     setCurrentCategory(index);
     if (category === "Toutes") {
@@ -121,12 +127,13 @@ function Competences() {
       setDisplayedSkills(filtered);
     }
   };
+  // FIN FONCTION DE FILTRE
 
   return (
     <div className="skills_container">
       <h1>Compétences</h1>
 
-      {/* Création des boutons pour filtrer les différentes catégories */}
+      {/* DEBUT BOUTONS DE FILTRE */}
       <div className="skills_buttons">
         {categories.map((category, index) => (
           <button
@@ -138,8 +145,9 @@ function Competences() {
           </button>
         ))}
       </div>
+      {/* FIN BOUTONS DE FILTRE */}
 
-      {/* Création de la liste des compétences */}
+      {/* DEBUT LISTE DES COMPETENCES */}
       <div className="skills_list">
         {displayedSkills.map((skill, index) => (
           <div key={index} className="skills_card">
@@ -148,6 +156,8 @@ function Competences() {
           </div>
         ))}
       </div>
+      {/* FIN LISTE DES COMPETENCES */}
+      
     </div>
   );
 }

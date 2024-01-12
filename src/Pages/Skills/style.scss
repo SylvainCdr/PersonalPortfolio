@@ -5,7 +5,7 @@
 text-align: center;
 
     button {
-        background-color: #008518;
+        background-color: #0381d4;
         margin: 1rem;
         border: none;
         color: white;
@@ -20,7 +20,7 @@ text-align: center;
         -o-border-radius: 0.3rem;
 
         &:hover {
-            background-color: #00b81c;
+            background-color: #02b2de;
         }
 }
 }
@@ -67,6 +67,15 @@ img {
         }
     }
     
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .skills_container {
+        h1 {
+            font-size: 2rem;
+        }
+    }
     
 }
 

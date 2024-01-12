@@ -18,7 +18,7 @@ function Contact() {
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   const isValidMessage = (message) => message.length >= 10;
 
-  // FONCTIONS POUR VERIFIER LES CHAMPS DU FORMULAIRE
+  // FONCTIONS POUR VERIFIER LES CHAMPS DU FORMULAIRE (name,email,message)
   const handleNameChange = (e) => {
     const value = e.target.value;
     setName(value);
@@ -44,7 +44,7 @@ function Contact() {
   };
 
   // FONCTION POUR ENVOYER LE FORMULAIRE
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     // CONTROLE DES CHAMPS DU FORMULAIRE, SI ERREUR, AFFICHAGE D'UNE MODAL EPHEMERE SweetAlert2
@@ -67,22 +67,40 @@ function Contact() {
     console.log("Email:", email);
     console.log("Message:", message);
 
-    // AFFICHAGE D'UNE MODAL EPHEMERE SweetAlert2 POUR CONFIRMER L'ENVOI DU FORMULAIRE
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "Message envoyé avec succès",
-      showConfirmButton: false,
-      timer: 1800,
+    // ENVOI DES DONNEES DU FORMULAIRE VERS LE BACKEND
+    const response = await fetch("http://localhost:3001/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
     });
 
-    // REINITIALISATION DES CHAMPS DU FORMULAIRE
-    setName("");
-    setEmail("");
-    setMessage("");
-    setNameError("");
-    setEmailError("");
-    setMessageError("");
+    // SI REPONSE DU BACKEND Ok ALORS...
+    if (response.ok) {
+      // AFFICHAGE D'UNE MODAL EPHEMERE SweetAlert2 POUR CONFIRMER L'ENVOI DU FORMULAIRE
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Message envoyé avec succès",
+        showConfirmButton: false,
+        timer: 1800,
+      });
+
+      // REINITIALISATION DES CHAMPS DU FORMULAIRE
+      setName("");
+      setEmail("");
+      setMessage("");
+      setNameError("");
+      setEmailError("");
+      setMessageError("");
+    } else {
+      // EN CAS D'ERREUR
+      Swal.fire({
+        title: "Erreur",
+        text: "Une erreur s'est produite. Veuillez réessayer.",
+        icon: "error",
+        timer: 1800,
+      });
+    }
   };
 
   return (
@@ -121,7 +139,6 @@ function Contact() {
         allowFullScreen=""
         aria-hidden="false"
       ></iframe>
-
 
       {/* DEBUT FORMULAIRE DE CONTACT  */}
       <form onSubmit={handleFormSubmit}>

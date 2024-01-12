@@ -146,19 +146,20 @@ body {
 }
 
 
+
+
 :root {
-    --sunset1:#dafee9;
-      --sunset2:#c7e6eb;
-      --sunset3:#bed3ef;
-      --sunset4:#c5c9f2;
-      --sunset5:#d5c7f6;
-      --sunset6:#dcccf9;
-      --sunset7:#e0c3fb;
-      --sunset8:#df9dfd;
-      --sunset9:#9769fe;
-      --sunset10:#4832ff;
+    --sunset1:#e9f7fe;
+      --sunset2:#d5e1fd;
+      --sunset3:#c6d0fd;
+      --sunset4:#bec6fc;
+      --sunset5:#bdc3fc;
+      --sunset6:#bcc7fb;
+      --sunset7:#a8b5fb;
+      --sunset8:#8b97fa;
+      --sunset9:#6772fa;
+      --sunset10:#3f48f9;
       
    }
-  
   
   

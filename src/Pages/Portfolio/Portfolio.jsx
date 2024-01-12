@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import "./style.scss";
 
 function Portfolio() {
+  // DEBUT TABLEAU D'OBJETS DES PROJETS
   const Projects = [
     {
       id: 1,
@@ -93,30 +94,37 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
   ];
+  // FIN TABLEAU D'OBJETS DES PROJETS
 
-
+  // FONCTIONNALITE DE RECHERCHE PAR TECHNO
   const [searchTechnos, setSearchTechnos] = useState("");
+  // FONCTIONNALITE D'AGRANDISSEMENT DES IMAGES
   const [enlargedImage, setEnlargedImage] = useState(null);
 
+  // FONCTIONNALITE DE RECHERCHE PAR TECHNO & AFFICHAGE EN TEMPS REEL
   const handleSearch = (e) => {
     setSearchTechnos(e.target.value);
     setEnlargedImage(null); // Réinitialiser l'image agrandie lors d'une nouvelle recherche
   };
 
+  // FONCTION handleClick pour agrandir l'image
   const handleImageClick = (image) => {
     setEnlargedImage(image);
   };
 
+  // FONCTION POUR FILTRER LES PROJETS PAR TECHNO
   const filteredProjects = Projects.filter((project) => {
     const lowerCasedSearch = searchTechnos.toLowerCase();
-    return project.tech.some((tech) => tech.toLowerCase().includes(lowerCasedSearch));
+    return project.tech.some((tech) =>
+      tech.toLowerCase().includes(lowerCasedSearch)
+    );
   });
 
   return (
     <div className="portfolio">
       <h1>Découvrez mes projets</h1>
 
-      {/* Searchbar pour saisir une techno et afficher les résultats en temps réel */}
+      {/* DEBUT BARRE DE RECHERCHE */}
       <div className="portfolio_search">
         <input
           type="text"
@@ -125,8 +133,9 @@ function Portfolio() {
           onChange={handleSearch}
         />
       </div>
+      {/* FIN BARRE DE RECHERCHE */}
 
-      {/* Liste de projets filtrés */}
+      {/* DEBUT LISTE DES PROJETS FILTRES */}
       <div className="portfolio_container">
         {filteredProjects.map((project) => (
           <div className="portfolio__card" key={project.id}>
@@ -138,16 +147,17 @@ function Portfolio() {
             />
             {/* <p>{project.tech.join(", ")}</p> */}
             <p>{project.description}</p>
-              <button>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <button>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Voir le projet <i className="fa-brands fa-github"></i>
-            </a>
-              </button>
+              </a>
+            </button>
           </div>
+          // FIN LISTE DES PROJETS FILTRES
         ))}
       </div>
 
-      {/* Affichage de l'image agrandie */}
+      {/* DEBUT AFFICHAGE DE L IMAGE AU CLIC */}
       {enlargedImage && (
         <div className="enlarged_img" onClick={() => setEnlargedImage(null)}>
           <img
@@ -157,6 +167,7 @@ function Portfolio() {
           />
         </div>
       )}
+      {/* FIN AFFICHAGE DE L IMAGE AU CLIC */}
     </div>
   );
 }
