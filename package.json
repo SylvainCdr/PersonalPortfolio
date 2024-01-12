@@ -2,7 +2,7 @@
   "name": "react-node",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://sylvaincdr.github.io/PersonalPortfolio-Frontend",
+  "homepage": "https://sylvaincdr.github.io/PersonalPortfolio-Frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -43,8 +43,6 @@
     ]
   },
   "devDependencies": {
-    "gh": "^2.8.9",
-    "gh-pages": "^6.1.1",
-    "pages": "^0.0.16"
+    "gh-pages": "^6.1.1"
   }
 }
