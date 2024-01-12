@@ -291,7 +291,9 @@
         border: none;
         border-radius: 5px;
         background-color: #189bf2;
+        
         color: white;
+
         font-family: 'Montserrat', sans-serif;
         font-size: 1.2rem;
         font-weight: 600;
@@ -301,7 +303,11 @@
         &:hover 
 {
             background-color: #02b2de;
-            color: #fff;
+          
+        }
+        a {
+          text-decoration: none;
+          color: white;
         }
     }
 
