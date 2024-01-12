@@ -14,6 +14,24 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
+      id: 7,
+      name: "Countries - API",
+      tech: ["javascript", "js", "react", "html", "css", "api"],
+      image: "countries.png",
+      link: "https://github.com/SylvainCdr/countries",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
+    },
+    {
+      id: 8,
+      name: "Portfolio architecte d'intérieur",
+      tech: ["javascript", "js", "react", "node", "api", "html", "css"],
+      image: "portfolio-architecte.png",
+      link: "https://github.com/SylvainCdr/Portfolio-architecte-Frontend",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
+    },
+    {
       id: 2,
       name: "Loc'Event - Location de salles",
       tech: [
@@ -67,23 +85,15 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
-      id: 7,
-      name: "Countries - API",
-      tech: ["javascript", "js", "react", "html", "css", "api"],
-      image: "countries.png",
-      link: "https://github.com/SylvainCdr/countries",
+      id: 10,
+      name: "Portfolio personnel",
+      tech: ["React", "node", "html", "css"],
+      image: "personalPortfolio.png",
+      link: "https://github.com/SylvainCdr/PersonalPortfolio-Frontend",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
-    {
-      id: 8,
-      name: "Portfolio architecte d'intérieur",
-      tech: ["javascript", "js", "react", "node", "api", "html", "css"],
-      image: "portfolio-architecte.png",
-      link: "https://github.com/SylvainCdr/Portfolio-architecte-Frontend",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
-    },
+
     {
       id: 9,
       name: "Gestionnaire de tâches",
