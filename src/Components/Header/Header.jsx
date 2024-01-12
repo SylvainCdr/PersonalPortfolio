@@ -40,7 +40,7 @@ function Header() {
           <span>
             <a href={github} target="_blank" rel="noopener noreferrer">
               <img
-                src="https://img.icons8.com/?size=48&id=bVGqATNwfhYq&format=png"
+                src="https://img.icons8.com/?size=64&id=52539&format=png"
                 alt="github"
               />
             </a>
