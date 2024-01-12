@@ -6,13 +6,13 @@ function Competences() {
     {
       name: "HTML",
       category: "Frontend",
-      img: "https://img.icons8.com/?size=64&id=59916&format=png",
+      img: "https://img.icons8.com/?size=80&id=rgWYRCafcInr&format=png",
     },
 
     {
       name: "CSS",
       category: "Frontend",
-      img: "https://img.icons8.com/?size=64&id=5cVdiiKKi0vX&format=png",
+      img: "https://img.icons8.com/?size=64&id=107497&format=png",
     },
     {
       name: "UI / UX",
@@ -22,17 +22,17 @@ function Competences() {
     {
       name: "PHP",
       category: "Backend",
-      img: "https://img.icons8.com/?size=64&id=UGYn5TapNioV&format=png",
+      img: "https://img.icons8.com/?size=80&id=ew8X3wM9rXiK&format=png",
     },
     {
       name: "Symfony",
       category: "Framework",
-      img: "https://img.icons8.com/?size=80&id=PtXpYRJkVmd1&format=png",
+      img: "https://img.icons8.com/?size=80&id=tzQnYsj2vAdh&format=png",
     },
     {
       name: "MySQL",
       category: "BDD",
-      img: "https://img.icons8.com/?size=48&id=9nLaR5KFGjN0&format=png",
+      img: "https://img.icons8.com/?size=80&id=rgPSE6nAB766&format=png",
     },
     {
       name: "MongoDB",
@@ -42,13 +42,13 @@ function Competences() {
     {
       name: "PostgreSQL",
       category: "BDD",
-      img: "https://img.icons8.com/?size=48&id=38561&format=png",
+      img: "https://img.icons8.com/?size=80&id=LwQEs9KnDgIo&format=png",
     },
 
     {
       name: "JavaScript",
       category: "Frontend",
-      img: "https://img.icons8.com/?size=48&id=108784&format=png",
+      img: "https://img.icons8.com/?size=64&id=1ZSHk8m9bk4p&format=png",
     },
     {
       name: "React",
@@ -58,28 +58,28 @@ function Competences() {
     {
       name: "Node",
       category: "Backend",
-      img: "https://img.icons8.com/?size=48&id=hsPbhkOH4FMe&format=png",
+      img: "https://img.icons8.com/?size=64&id=ouWtcsgDBiwO&format=png",
     },
 
     {
       name: "GitHub",
       category: "Tools",
-      img: "https://img.icons8.com/?size=48&id=bVGqATNwfhYq&format=png",
+      img: "https://img.icons8.com/?size=80&id=1kYzi9NIypqq&format=png",
     },
     {
       name: "VS Code",
       category: "Outils",
-      img: "https://img.icons8.com/?size=48&id=y7WGoWNuIWac&format=png",
+      img: "https://img.icons8.com/?size=64&id=iFPHC1KfnoxC&format=png",
     },
     {
       name: "Figma",
       category: "Outils",
-      img: "https://img.icons8.com/?size=48&id=zfHRZ6i1Wg0U&format=png",
+      img: "https://img.icons8.com/?size=80&id=P5ROoX4rxKSE&format=png",
     },
     {
       name: "Adobe XD",
       category: "Outils",
-      img: "https://img.icons8.com/?size=48&id=4VVL78edhbW9&format=png",
+      img: "https://img.icons8.com/?size=80&id=DkZbcrYZGKru&format=png",
     },
     {
       name: "Trello",
@@ -89,12 +89,12 @@ function Competences() {
     {
       name: "Bootstrap",
       category: "Frontend",
-      img: "https://img.icons8.com/?size=48&id=g9mmSxx3SwAI&format=png",
+      img: "https://img.icons8.com/?size=80&id=BASPRdx1MrMq&format=png",
     },
     {
       name: "WordPress",
       category: "CMS",
-      img: "https://img.icons8.com/?size=64&id=46972&format=png",
+      img: "https://img.icons8.com/?size=80&id=aMLZmDlq6SvC&format=png",
     },
   ];
 

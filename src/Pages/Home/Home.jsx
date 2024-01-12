@@ -52,7 +52,7 @@ function Homepage() {
           <div className="presentation_titleImg">
             <div className="presentation_title">"Commerce, Web, Élan"</div>
             <div className="presentation_img">
-              <img src="./media/fusee2.png" alt="Sylvain Cadoret" />
+              <img src="./media/fusee3.png" alt="Sylvain Cadoret" />
             </div>
           </div>
           <div className="presentation_text">
