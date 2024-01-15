@@ -2,7 +2,6 @@ import { React, useState } from "react";
 import "./style.scss";
 
 function Competences() {
-
   // DEBUT TABLEAU D'OBJETS DES COMPETENCES
   const techSkills = [
     {
@@ -113,9 +112,9 @@ function Competences() {
     "Outils",
     "CMS",
   ];
-   // FIN FILTRE DES COMPETENCES
+  // FIN FILTRE DES COMPETENCES
 
-   // DEBUT FONCTION DE FILTRE
+  // DEBUT FONCTION DE FILTRE
   const filter = (category, index) => {
     setCurrentCategory(index);
     if (category === "Toutes") {
@@ -132,7 +131,6 @@ function Competences() {
   return (
     <div className="skills_container">
       <h1>Compétences</h1>
-
       {/* DEBUT BOUTONS DE FILTRE */}
       <div className="skills_buttons">
         {categories.map((category, index) => (
@@ -146,7 +144,6 @@ function Competences() {
         ))}
       </div>
       {/* FIN BOUTONS DE FILTRE */}
-
       {/* DEBUT LISTE DES COMPETENCES */}
       <div className="skills_list">
         {displayedSkills.map((skill, index) => (
@@ -157,7 +154,80 @@ function Competences() {
         ))}
       </div>
       {/* FIN LISTE DES COMPETENCES */}
-      
+      <h1>Expériences</h1>
+
+      <div className="skills_experience">
+        <div className="skills_experience_details">
+          <p>
+            Ma transition vers le développement web s'inspire directement de mon
+            parcours de gestionnaire. Mes compétences acquises dans le commerce
+            sont des atouts précieux que je transpose dans le monde du code :{" "}
+          </p>
+          <li>Gestion stratégique et opérationnelle </li>
+          <li>Planification efficace et respect des délais </li>
+          <li> Communication claire et adaptée à différents interlocuteurs </li>
+          <li>Capacité à résoudre des problèmes complexes </li>
+          <li>Adaptabilité et prise de décision rapide </li>
+          <li>
+            Compétences en design & merchandising, alliant esthétique et
+            expérience utilisateur
+          </li>
+          <p>
+            Chaque jour en tant que directeur adjoint m'a appris à gérer des
+            équipes, à répondre aux besoins des clients et à assurer le bon
+            déroulement des opérations. Ces compétences, combinées à ma passion
+            pour le développement web, font de moi un professionnel déterminé,
+            prêt à contribuer à des projets web passionnants.
+          </p>
+          <p>🚀💻 #CodeAndCommerce" </p>
+          <p>
+            Pour en savoir plus sur mon parcours, vous pouvez télécharger mon CV
+            :{" "}
+            <button className="Skills_cv_button">
+              <a href="/media/CV_Cadoret-Sylvain.pdf" download>
+                Cliquez ici
+              </a>
+            </button>
+          </p>
+        </div>
+
+        <div className="skills_experience_img">
+          <img src="./media/clipboard.svg" alt="teamwork" />
+        </div>
+      </div>
+      <h1>Au-delà du Professionnel</h1>
+
+      <div className="skills_hobbies">
+        <div className="skills_hobbies_img">
+          <img src="./media/target.svg" alt="teamwork" />
+        </div>
+        <div className="skills_hobbies_details">
+          <p>
+            En parralèle de ma passion pour le développement web, je trouve un
+            équilibre dans ma vie à travers diverses activités qui nourrissent
+            ma créativité et mon bien-être.
+          </p>
+          <p>
+            Ces expériences non seulement élargissent mes horizons, mais
+            renforcent également ma perspective innovante dans le monde du
+            développement.
+          </p>
+
+          <p>
+            Chaque centre d'intérêt apporte sa propre nuance à mon parcours,
+            créant une toile unique qui reflète ma personnalité polyvalente et
+            ma passion pour l'apprentissage continu.
+          </p>
+          <p>Mes loisirs sont :</p>
+
+          <li>L'aquariophilie & la terrariophilie</li>
+          <li>La photographie</li>
+          <li>La botanique</li>
+          <li>La plongée</li>
+          <li>Le voyage</li>
+          <li>La cuisine</li>
+        </div>
+      </div>
     </div>
   );
 }
