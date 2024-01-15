@@ -144,6 +144,7 @@ function Competences() {
         ))}
       </div>
       {/* FIN BOUTONS DE FILTRE */}
+
       {/* DEBUT LISTE DES COMPETENCES */}
       <div className="skills_list">
         {displayedSkills.map((skill, index) => (
@@ -154,6 +155,8 @@ function Competences() {
         ))}
       </div>
       {/* FIN LISTE DES COMPETENCES */}
+
+      {/* DEBUT DETAIL EXPERIENCE */}
       <h1>Expériences</h1>
 
       <div className="skills_experience">
@@ -192,14 +195,16 @@ function Competences() {
         </div>
 
         <div className="skills_experience_img">
-          <img src="./media/clipboard.svg" alt="teamwork" />
+          <img src="./media/clipboard.svg" alt="clipboard img" />
         </div>
       </div>
-      <h1>Au-delà du Professionnel</h1>
+      {/* FIN DETAIL EXPERIENCE */}
 
+      {/* DEBUT DETAIL HOBBIES */}
+      <h1>Au-delà du Professionnel</h1>
       <div className="skills_hobbies">
         <div className="skills_hobbies_img">
-          <img src="./media/target.svg" alt="teamwork" />
+          <img src="./media/target.svg" alt="target img" />
         </div>
         <div className="skills_hobbies_details">
           <p>
@@ -228,6 +233,7 @@ function Competences() {
           <li>La cuisine</li>
         </div>
       </div>
+      {/* FIN DETAIL HOBBIES */}
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
-      id: 7,
+      id: 2,
       name: "Countries - API",
       tech: ["javascript", "js", "react", "html", "css", "api"],
       image: "countries.png",
@@ -23,7 +23,7 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
-      id: 8,
+      id: 3,
       name: "Portfolio architecte d'intérieur",
       tech: ["javascript", "js", "react", "node", "api", "html", "css"],
       image: "portfolio-architecte.png",
@@ -32,7 +32,7 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
-      id: 2,
+      id: 7,
       name: "Loc'Event - Location de salles",
       tech: [
         "javascript",
@@ -49,7 +49,7 @@ function Portfolio() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus? Dolorem commodi a autem! Distinctio exercitationem commodi asperiores labore mollitia, recusandae",
     },
     {
-      id: 3,
+      id: 8,
       name: "Pokemons - Pokedex",
       tech: ["javascript", "js", "react", "api", "html", "css"],
       image: "pokemon.png",
