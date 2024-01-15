@@ -4,10 +4,10 @@ Ce référentiel contient le code source du site web personnel de Sylvain Cadore
 
 # Screenshots
 
-![Alt text](<Capture d'écran 2024-01-12 153057.png>)
-![Alt text](<Capture d'écran 2024-01-12 153150.png>)
-![Alt text](<Capture d'écran 2024-01-12 153135.png>)
-![Alt text](<Capture d'écran 2024-01-12 153208.png>)
+![Alt text](<src/Capture d'écran 2024-01-15 164509.png>)
+![Alt text](<src/Capture d'écran 2024-01-15 164538.png>)
+![Alt text](<src/Capture d'écran 2024-01-15 164601.png>)
+![Alt text](<src/Capture d'écran 2024-01-15 164619.png>)
 
 ## Table des matières
 
