@@ -5,6 +5,15 @@ function Portfolio() {
   // DEBUT TABLEAU D'OBJETS DES PROJETS
   const Projects = [
     {
+      id: 11,
+      name: "FilmExplorer - TMDb API",
+      tech: ["javascript", "js", "react", "html", "css"],
+      image: "filmExplorer.png",
+      link: "https://github.com/SylvainCdr/Movies-TmdbApi",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus atque soluta vero labore fugit, nesciunt sapiente delectus?",
+    },
+    {
       id: 1,
       name: "KASA - Location de biens",
       tech: ["javascript", "js", "react", "html", "css"],
@@ -15,7 +24,7 @@ function Portfolio() {
     },
     {
       id: 2,
-      name: "Countries - API",
+      name: "Discover the World - RestCountries API",
       tech: ["javascript", "js", "react", "html", "css", "api"],
       image: "countries.png",
       link: "https://github.com/SylvainCdr/countries",
@@ -50,7 +59,7 @@ function Portfolio() {
     },
     {
       id: 8,
-      name: "Pokemons - Pokedex",
+      name: "Pokedex - Pokemon API",
       tech: ["javascript", "js", "react", "api", "html", "css"],
       image: "pokemon.png",
       link: "https://github.com/SylvainCdr/pokemon",
@@ -77,7 +86,7 @@ function Portfolio() {
     },
     {
       id: 6,
-      name: "Site - e-commerce",
+      name: "Site e-commerce",
       tech: ["html", "css"],
       image: "e-com_2.png",
       link: "https://github.com/SylvainCdr/WEBSITE_INTERACTIF ",
